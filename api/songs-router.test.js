@@ -1,6 +1,9 @@
+/* eslint-disable */
+
 const request = require('supertest');
 const server = require('../server');
 const db = require('../db-config');
+
 
 beforeAll(async () => {
     await db.migrate.rollback();
